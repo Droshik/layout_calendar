@@ -4,13 +4,15 @@
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
+  width: 707px;
 
   > div {
     display: block;
+    flex-shrink: 0;
     width: $cell-size;
     height: $cell-size;
     border: $cell-border;
+    background-color: $cell-background;
     margin-right: 1px;
     margin-bottom: 1px;
     position: relative;
@@ -29,15 +31,15 @@
   }
 }
 
-@for $i from 1 to 7 {
+@for $i from 1 to 8 {
   .calendar-#{map-get($day-of-the-week-map, $i)} {
     :first-child {
-      margin-left: ($i - 1) * ($day-of-the-week-margin + 2);
+      margin-left: ($i - 1) * ($day-of-the-week-margin);
     }
   }
 }
 
-@for $c from 1 to 32 {
+@for $c from 0 to 31 {
   .calendar > :nth-child(#{$c})::after {
     content: "#{$c}";
     position: absolute;
