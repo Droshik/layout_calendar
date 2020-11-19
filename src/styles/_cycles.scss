@@ -7,7 +7,7 @@
 @for $i from 1 to 8 {
   .calendar-#{map-get($day-of-the-week-map, $i)} {
     :first-child {
-      margin-left: ($i - 1) * ($day-of-the-week-margin);
+      margin-left: ($i - 1) * ($day-of-the-week-space);
     }
   }
 }
