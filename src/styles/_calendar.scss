@@ -5,15 +5,15 @@
   padding: 30px;
 
   > div {
+    position: relative;
     display: block;
     flex-shrink: 0;
     width: $cell-size;
     height: $cell-size;
-    border: $cell-border;
-    background-color: $cell-background;
     margin-right: 1px;
     margin-bottom: 1px;
-    position: relative;
+    border: $cell-border;
+    background-color: $cell-background;
     transition: all 0.5s;
 
     &:hover {
