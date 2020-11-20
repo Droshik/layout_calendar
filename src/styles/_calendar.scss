@@ -4,7 +4,7 @@
   width: $day-of-the-week-space * 7;
   margin: 20vh auto;
 
-  > div {
+  > * {
     position: relative;
     display: block;
     flex-shrink: 0;

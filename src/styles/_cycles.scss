@@ -4,11 +4,9 @@
   }
 }
 
-@for $i from 1 through 7 {
-  .calendar-#{map-get($day-of-the-week-map, $i)} {
-    :first-child {
-      margin-left: ($i - 1) * ($day-of-the-week-space);
-    }
+@each $i, $day in $day-of-the-week-map {
+  .calendar-#{$day} >:first-child {
+    margin-left: ($i - 1) * $day-of-the-week-space;
   }
 }
 
