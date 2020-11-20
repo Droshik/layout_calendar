@@ -10,8 +10,8 @@
     flex-shrink: 0;
     width: $cell-size;
     height: $cell-size;
-    margin-right: 1px;
-    margin-bottom: 1px;
+    margin-right: $cell-indent;
+    margin-bottom: $cell-indent;
     border: $cell-border;
     background-color: $cell-background;
     transition: all 0.5s;
